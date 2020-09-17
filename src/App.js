@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
 import {Route, Switch, Redirect} from 'react-router-dom';
+// custom components
 import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
 import Header from './components/header/header.component'
 import SignInAndSignOut from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component'
+// firebase
 import {auth, createUserProfileDocument} from "./firebase/firebase.utils";
+// redux
 import {connect} from "react-redux";
 import {setCurrentUser} from './redux/user/user.actions'
 
